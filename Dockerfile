@@ -1,4 +1,4 @@
 FROM tomcat
 # Take the war and copy to webapps of tomcat
- ADD /var/lib/jenkins/workspace/DevOpsBootCamp/project/target/project-1.0-RAMA.war /usr/local/tomcat/webapps/
+ copy /var/lib/jenkins/workspace/DevOpsBootCamp/project/target/project-1.0-RAMA.war /usr/local/tomcat/webapps/
 cmd "Cataline.sh" "run"
