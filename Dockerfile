@@ -1,3 +1,4 @@
-FROM tomcat:8
+FROM tomcat
 # Take the war and copy to webapps of tomcat
-ADD target/*.war /usr/local/tomcat/webapps/
+ADD target/project-1.0-RAMA.war /user/local/tomcat/webapps/
+cmd "Cataline.sh" "run"
